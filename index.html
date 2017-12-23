@@ -1,0 +1,331 @@
+<DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>隆川蜀味菜馆</title>
+		<script src = "js/jquery-1.10.1.min.js"></script>
+		<script src = "js/details.js"></script>
+		<script type = "text/javascript" src="js/jquery.cookie.js"></script>
+
+		
+	</head>
+		<link rel="stylesheet" href="css/shopdetails.css">
+		<link rel="stylesheet" href="css/iconfont.css">
+		<link rel="stylesheet" href="css/iconfont1.css">
+
+	<body>
+		<!-- 导航 -->
+		<div class = "shopbg">
+			<div class = headermidele>
+				<a href="#" class = "iconfont icon-eliaomo1 headnav"></a>
+				<a href="#" class = "iconfont icon-eliaomo headnav2"></a>
+				<a href="Homepage.html" class = "headnav1">首页</a>
+				<a href="#" class = "headnav1">我的订单</a>
+				<a href="#" class = "headnav1">加盟合作</a>
+				<div class = "bgright">
+					<div class = "de_login">
+						<span class = "iconfont icon-wode myicon"></span>
+						<a href="#" class = "de_button">登录/注册</a>
+					</div>
+					<a href="#" class= "server">
+						<span class = "iconfont icon-kefu"></span>
+						服务中心
+					</a>
+					<a href="#" class= "server">规则中心</a>
+					<a href="#" class= "server">
+						<span class = "iconfont icon-dingdan"></span>
+						手机应用
+					</a>
+				</div>
+			</div>
+		</div>
+		<!-- 商家信息一览 -->
+		<div class = "shopguidebg" >
+			<div class = "shopguide">
+				<div class = "shopguideinfo">
+					<img class = "shoplogo" src="" alt="">
+					<div class = "shopinfo">
+						<h1>
+						<i id = "shopname11"></i>
+						<span>营业中</span>
+						</h1>
+						<p class = "graded"> 
+							<img src="images/star-on.png" alt="=评分4.7">
+							<img src="images/star-on.png" alt="=评分4.7">
+							<img src="images/star-on.png" alt="=评分4.7">
+							<img src="images/star-on.png" alt="=评分4.7">
+							<img src="images/star-on.png" alt="=评分4.7">
+							<span class = "starcount"></span>
+							<span class = "salemonth"></span>
+						</p>
+					</div>
+					<div class = "selectinfo">
+					</div>
+					<div class = "selectinfo1">
+						<ul>
+							<li>
+								<div id = "zonghe">
+									<span id = "grade">4.7</span><br>
+									<span id = "zonghegrade">综合评价</span><br>
+									<span id = "compare1"  >高于周边商家<i id = "compare1">63.9%</i></span>
+								</div>
+								<div id = "zonghe2">
+									<p id = "servera">服务态度：
+										<span id = "starcont">
+										<img src="images/star-on.png" alt="">
+										<img src="images/star-on.png" alt="">
+										<img src="images/star-on.png" alt="">
+										<img src="images/star-on.png" alt="">
+										</span>
+										<span class = "compare"></span>
+									</p>
+									<p id = "foodscom">菜品评价：
+										<span id = "starcont">
+										<img src="images/star-on.png" alt="">
+										<img src="images/star-on.png" alt="">
+										<img src="images/star-on.png" alt="">
+										<img src="images/star-on.png" alt="">
+										</span>
+										<span class = "compare"></span>
+									</p>
+								</div>
+							</li>
+							<li>
+								<p id = "addressinfo">
+									<span id = "shopadd">商家地址:</span>
+									<span id = "shopaddinfo"></span><br>
+									<span id = "shoptime">营业时间:</span>
+									<span id = "shoptimeinfo"></span>
+								</p>
+							</li>
+							<li >
+								<p id = "sendinfo">
+									由  
+									<span id = "sendshop">
+									</span>提供配送服务
+								</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- 关于配送和服务 -->
+				<div class = "shopguideserver">
+					<span class = "sendspeedbg">
+						<em class = "sendspeed">平均送达速度</em>
+						<br><br>
+						<em class = "minute"></em>
+						<em>分钟</em>
+					</span>
+					<span class = "sendpricebg">
+						<em class = "sendprice">配送费</em>
+						
+						<br><br>
+						<em class = "price"></em>
+						<em>元</em>
+
+					</span>
+					<span class = "startsendpricebg">
+						<em class = "startsendprice">起送价</em>
+
+						<br><br>
+						<em class = "startprice"></em>
+						<em>元</em>
+					</span>
+				</div>
+				<div class = "favor">
+					<span class = "iconfont icon-shoucang"></span>
+					<br>
+					<span class = "collect">收藏</span>
+				</div>
+			</div>
+		</div>
+		<!-- 商家导航 -->
+		<div id = "shopnav">
+			<div id = "shoptype">
+				<div id = "shoptypeleft">
+					<a id = "allshops" class = "active1" href="#">所有商品<span></span></a>
+					<a id = "shopscomm" href="#">评价<span></span></a>
+					<a id = "aptitude" href="#">商家资质</a>
+					<p id = "shopsort">
+						<a id = "paixu"	class = "active4" >默认排序</a>
+						<a id = "paixu" sign="1" >评分<i class="iconfont icon-shuzhixiajiang"></i></a>
+						<a id = "paixu" sign ="2">销量<i class="iconfont icon-shuzhixiajiang"></i></a>
+						<a id = "paixu" sign="3">价格<i class="iconfont icon-shuzhixiajiang"></i></a>
+					</p>
+				</div>
+				<form id = "shoptyperight">
+					<input id = "shopsearch" type="text" name="search"  placeholder="吃点什么呀">
+					<input id = "shopbutton" type="submit" name="search" value="搜索">
+				</form>
+			</div>
+		</div>
+		<div id = "shopmenubg">
+			<!-- 菜单页 -->
+			<div id = "shopmenu" class = "bg active3">
+				<div id ="shoptypes1">
+					<div id = "shoptypes">
+						<!-- <a  class = "active" href="">热销</a>
+						<a href="">优惠</a>
+						<a href="">脆皮鸡肉饭</a>
+						<a href="">超大份脆皮鸡肉饭</a>
+						<a href="">超大份脆皮鸡肉饭</a>
+						<a href="">超大份脆皮鸡肉饭</a>
+						<a href="">超大份脆皮鸡肉饭</a>
+						<a href="">超大份脆皮鸡肉饭</a>
+						<a href="">超大份脆皮鸡肉饭</a> -->
+					</div>
+				</div>
+				<!-- 具体 -->
+				<div id = "shoplistbg">
+					
+				</div>
+			</div>
+			<!-- 评论页 -->
+			<div id = "shopcomment" class = "bg">
+				<div id ="commcontent" >
+					<div id = "commentype">
+						<a  class = "active2" >全部(<span>825</span>)</a>
+						<a >满意(<span>225</span>)</a>
+						<a >不满意(<span>25</span>)</a>
+						<a >有图(<span>25</span>)</a>
+					</div>
+					<ul id = "allcomments" class="comactive">
+						
+					</ul>
+					
+				</div>
+			</div>
+			<!-- 评论页完毕 -->
+			<div id = "shopcomment" class = "bg">
+				宇宙第一
+			</div>
+			
+
+			<div id = "shopbulletin">
+						<h3 class="shopbulletin-section-title">商家公告</h3>
+						<p class="shopbulletin-content ng-binding">理工新校区可以送到楼底！！！</p>
+						<div class="shopbulletin-delivery">
+							<h4>配送说明：</h4>
+							<p class="ng-binding "><em>配送费:</em><em class ='ng-binding222'></em><em>元</em></p>
+						</div>
+						<ul class="shopbulletin-supports">
+							<li ng-repeat="support in shop.supports" class="ng-binding ng-scope">
+								<span ng-style="{'background-color': '#' + support.icon_color}" class="ng-binding" style="background-color: rgb(153, 153, 153);">保
+								</span> 已加入“外卖保”计划，食品安全有保障
+							</li>
+						</ul>
+						<a href="javascript:" class="shopcomplaint" ng-click="testLogin()">举报商家</a>
+
+				</div>
+		</div>
+		<div id= "foot">
+         <div id = "footm">
+			<div id ="foot1" class="footm1">
+				<h3>用户帮助</h3>
+				<a href="#" target="_black">服务中心</a>
+				<a href="#" target="_black">常见问题</a>
+			</div>
+			<div id ="foot1" class="footm2">
+			    <h3>商务合作</h3>
+			    <a href="#" target="_blank">我要开店</a> 
+			    <a href="http://support/about/jiameng" target="_blank">加盟指南</a> 
+			    <a href="http://support/about/contact" target="_blank">市场合作</a> 
+			    <a href="http://openapi.eleme.io/" target="_blank">开放平台</a>
+			</div>
+			<div id ="foot1" class="footm3">
+				<h3>关于我们</h3>
+				<a href="http://support/about" target="_blank">饿了么介绍</a> 
+				<a href="http://jobs.ele.me/" target="_blank">加入我们</a> 
+				<a href="/support/about/contact" target="_blank">联系我们</a> 
+				<a href="//h5.ele.me/service/agreement" target="_blank" ">规则中心</a>
+			</div>
+			<div id ="foot4">
+			     <p class="footer1">
+			         24小时客服热线 : 
+			         <a class="inherit" href="tel:10105757">10105757</a>
+			     </p>
+			     <p class="footer1">
+			         意见反馈 : 
+			         <a class="inherit" href="mailto:feedback@ele.me">feedback@ele.me</a>
+			     </p>
+			     <div class="footer1" id = "footeg">
+			         关注我们 :
+			         <span id = "icon1" class="iconfont icon-weixin"></span>
+			         <div id="dropbox" style="display: none">
+			            <img src="http://faas.elemecdn.com/desktop/media/img/wexinqc100@2x.393ade.png" alt="微信号: elemeorder" style="width:130px; height:130px">
+			             <p>微信号: elemeorder</p>
+			             <p>饿了么网上订餐</p>
+			         </div>
+			         <span class="iconfont icon-weibo1"></span>
+                 </div>
+            </div>
+			<div id ="foot5">
+				  <a href="https://h.ele.me/landing" target="_blank">
+				     <img src="//faas.elemecdn.com/desktop/media/img/appqc.95e532.png" class="footer-mobile-icon" alt="扫一扫下载饿了么手机 App" style="width:90px;height:90px;margin-right: 20px;float: left;">
+				  </a>
+				  <div class="footer-mobile">
+				    <h3>下载手机版</h3>
+				    <p>扫一扫,手机订餐方便</p>
+				  </div>
+			</div>
+			<div id ="foot6">
+				<h5 class="owner">
+				   所有方：上海拉扎斯信息科技有限公司
+				</h5>
+				<div id = "hu">
+					   增值电信业务许可证 :  
+					  <a href="http://www.shca.gov.cn/" target="_blank">沪B2-20150033</a> 
+					  | 
+					  <a href="http://www.miibeian.gov.cn/" target="_blank">沪ICP备 09007032
+					  </a> 
+					  | 
+					  <a href="http://www.sgs.gov.cn/lz/licenseLink.do?method=licenceView&amp;entyId=20120305173227823" target="_blank">上海工商行政管理</a> 
+					   Copyright ©2008-2017 ele.me, All Rights Reserved.  
+				</div>
+			</div>
+			<div id ="foot7">
+				   <img alt="已通过沪公网备案，备案号 310100103568" src="//faas.elemecdn.com/desktop/media/img/picp_bg.e373b3.jpg" height="30">
+			</div>
+         </div>
+       </div>
+		
+	<div id = "show2222">
+		<div id = "show222l">
+			<img id = "show333" src="images/1bd003d49c8e5b57d69879e2283d6jpeg.jpeg.png" alt="">
+		</div>
+		<div id = "show222r">
+			<p id = "showname" class = "jjjj">111</p>
+			<p class = "jjjj" >  <span id = "shopprice1111"></span></p>
+			<div id ="conbg">
+				<span id = "shopco">商品评论</span>
+				<p class="WWW"><span><img src="images/star-on.png" alt=""><img src="images/star-on.png" alt=""><img src="images/star-on.png" alt=""><img src="images/star-on.png" alt=""></span> <span id ="timecom">2017-10-20</span></p>
+				<p class="WWW"><span><img src="images/star-on.png" alt=""><img src="images/star-on.png" alt=""><img src="images/star-on.png" alt=""><img src="images/star-on.png" alt=""></span> <span id ="timecom">2017-10-20</span></p>
+				<p class="WWW"><span><img src="images/star-on.png" alt=""><img src="images/star-on.png" alt=""><img src="images/star-on.png" alt=""><img src="images/star-on.png" alt=""></span> <span id ="timecom">2017-10-20</span></p>
+				
+			</div>
+			<span id = "close">关闭</span>
+			
+		</div>
+		
+	</div>
+		
+      <!-- 购物车 -->
+
+      <div id="shopempty">
+				<div id="shopET">
+					<p>购物车 
+					  <a id = "cleanall" >[清空]</a>
+					</p>
+				</div>
+				<div id="shopEM">
+				</div>
+			
+			<div id="shopN">
+				<p id = "pei">配送货费 ￥3</p>
+				<p id = "empty1">结算</p>
+				<div id = "shoem"></div>0
+				</div>
+			</div>
+      </div>
+	</body>
+</html>

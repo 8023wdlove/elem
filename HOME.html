@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HOME</title>	
+	<link rel="stylesheet" type="text/css" href="css/HOME.css">
+	<link rel="stylesheet" type="text/css" href="css/iconfont1.css">
+</head>
+<body>
+<!-- 头部 -->
+	<div class="head">
+	  <div class="Mhead">
+			<div class="nav1">
+				<img src="images/e.jpg" alt="">
+				<a class="nava" href="#" target="_black">首页</a>
+				<a class="nava" href="#" target="_black">我的订单</a>
+				<a class="nava" href="#" target="_black">加盟合作</a>
+			</div>
+			<div class="nav2">
+				<div class="navb">
+					<a  class="navb1" href="#" target="_black">
+						 <span class="iconfont icon-fuwuzhongxinhui"></span>
+					   服务中心
+					</a>
+					<a class="navb1" href="#" target="_black">
+						 <span></span>
+					   规则中心
+					</a>
+					<div class="phon navb1" id ="phoncall">
+						 <span class="iconfont icon-tubiao-"></span>
+					   手机应用
+					   <div class="code" id ="phoncode">
+					      <!--向上小箭头-->
+					        <i></i>
+							<span>扫一扫, 手机订餐更方便</span>
+							<img class="codeimg" src="images/appcard.png" alt="">
+					   </div>
+					</div>
+				</div>
+				<div class="navc">
+					 <span class="iconfont icon-dengluzhucezhanghao"></span>
+					 <a href="#" target="_black">
+						登录/注册
+					 </a>
+				</div>
+				<div id="hide" style="display: none">	
+					<p>
+					<span class="iconfont icon-dengluzhucezhanghao"></span>
+					*****</p>
+				</div>
+			</div>
+	  </div>
+	</div>
+		
+	<div class="all">
+<!-- 当前位置-->
+		<div class="sit">
+				<div class="sitl">
+					<span>当前位置 :</span>
+					<a href="http://place/wwmtum78kdv">李沧区青山绿水(唐山路南)</a>	
+					<a href="http://home">[切换地址]</a>
+				</div>
+				<div class="sitr">
+				    <form action="glass" name="sit1 id = "sit2">
+						<input id = "seekid" type="text" name="seek" placeholder="搜索商家,美食..." />
+						<span class="iconfont icon-fangdajing"></span>
+					</form>
+				</div>	
+		</div>
+<!-- 谁去拿快递 -->
+	   <div class="who">
+			<div class="whor">
+				<img src="images/who.png" alt="" />
+			</div>
+	   </div>
+<!-- 右侧侧边栏 -->
+	   <div class="slibarall">
+		<div class="slibar" id = "slibard">
+			<div class="slibart">
+				<div class="menu">
+					<span class="iconfont icon-dingdan1"></span>
+					<div class="mymenu">
+					    <i></i>
+						<p>我的订单</p>
+					</div>
+					<!-- <div class="bor"></div> -->
+				</div>
+				<div class="shopcar" id = "shopcard">
+					<span class="iconfont icon-gouwuchekong"></span>
+					购物车
+					<!-- <div class="bor"></div> -->
+				</div>
+				<div class= "myage">
+					<span class="iconfont icon-xinxi1"></span>
+					<div class="myinfor">
+					    <i></i>
+						<p>我的信息</p>
+					</div>
+				</div>
+			</div>
+			<div class="slibarb">
+			   <div class="QRcode">
+				   <span class="iconfont icon-erweima1"></span>
+				   <div class="downcall">
+				      <span></span>
+					  <img src="images/appcard.png" alt="">
+					  <p>下载手机应用</p>
+					  <p>即可参加分享红包活动</p>
+				   </div>
+			   </div>
+			   <div class="backtop">
+					<span class="iconfont icon-tubiao102"></span>
+					<div class="backtop1">
+					    <i></i>
+						<p>回到顶部</p>
+					</div>
+			   </div>
+			</div>
+		</div>
+		<!-- 空div -->
+		<div class="slibarh">
+			<div id = "shopfull" style="display: none">
+			  <span>
+				购物车&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				 >>
+			  </span>
+			<p>你的购物车空空如也,快快去添加心仪的商品吧！</p>
+			</div>
+			<div id = "magfull" style="display: none">
+				<span>我的消息&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				>>
+				</span>
+				<div id = "magfulld">
+					<i class="iconfont icon-xinxi1"></i>
+					 您没有新的消息哦 
+				</div>
+			</div>
+		</div>
+	   </div>
+
+<!-- 商家分类 -->
+	   <div id="Merchants">
+		<div id = "Merchantsm">
+			<h3>商家分类 :</h3>
+			 <a href="#" category = "">全部商家</a> 
+			 <a href="#" category = "">美食</a> 
+			 <a href="#" category = "">快餐便当</a> 
+			 <a href="#" category = "">特色菜系</a> 
+			 <a href="#" category = "">异国料理</a> 
+			 <a href="#" category = "">小吃夜宵</a> 
+			 <a href="#" category = "">甜品饮品</a> 
+			 <a href="#" category = "">果蔬生鲜</a> 
+			 <a href="#" category = "">商品超市</a> 
+			 <a href="#" category = "">浪漫鲜花</a> 
+			 <a href="#" category = "">医药健康</a> 
+			 <a href="#" category = "">早餐</a>  
+			 <a href="#" category = "">午餐</a> 
+			 <a href="#" category = "">下午茶</a> 
+			 <a href="#" category = "">晚餐</a>  
+			 <a href="#" category = "">夜宵</a>  
+		</div>
+	   </div>
+
+<!-- 具体商品 -->
+
+            <div class = "difshop">
+				<a href="#" target="_blank" class ="rstblock"></a>
+				<a href="#" target="_blank" class ="rstblock"></a>
+				<a href="#" target="_blank" class ="rstblock"></a>
+				<a href="#" target="_blank" class ="rstblock"></a>
+				<a href="#" target="_blank" class ="rstblock"></a>
+				<a href="#" target="_blank" class ="rstblock"></a>
+				<a href="#" target="_blank" class ="rstblock"></a>
+				<a href="#" target="_blank" class ="rstblock"></a>
+				<a href="#" target="_blank" class ="rstblock"></a>
+				<a href="#" target="_blank" class ="rstblock"></a>
+				<a href="#" target="_blank" class ="rstblock"></a>
+				<a href="#" target="_blank" class ="rstblock"></a>
+				<a href="#" target="_blank" class ="rstblock"></a>
+				<a href="#" target="_blank" class ="rstblock"></a>
+				<a href="#" target="_blank" class ="rstblock"></a>
+				<a href="#" target="_blank" class ="rstblock"></a>
+				<a href="#" target="_blank" class ="rstblock"></a>
+				<a href="#" target="_blank" class ="rstblock"></a>
+				<a href="#" target="_blank" class ="rstblock"></a>
+				<a href="#" target="_blank" class ="rstblock"></a>
+				<a href="#" target="_blank" class ="rstblock"></a>
+				<a href="#" target="_blank" class ="rstblock"></a>
+				<a href="#" target="_blank" class ="rstblock"></a>
+				<a href="#" target="_blank" class ="rstblock"></a>
+				<b></b>
+           </div>
+            
+            <div class = "difshop difshopt" style="display: none">
+				<a href="#" target="_blank" class ="rstblock rstblockt"></a>
+				<a href="#" target="_blank" class ="rstblock rstblockt"></a>
+				<a href="#" target="_blank" class ="rstblock rstblockt"></a>
+				<a href="#" target="_blank" class ="rstblock rstblockt"></a>
+				<a href="#" target="_blank" class ="rstblock rstblockt"></a>
+				<a href="#" target="_blank" class ="rstblock rstblockt"></a>
+				<a href="#" target="_blank" class ="rstblock rstblockt"></a>
+				<a href="#" target="_blank" class ="rstblock rstblockt"></a>
+				<a href="#" target="_blank" class ="rstblock rstblockt"></a>
+				<a href="#" target="_blank" class ="rstblock rstblockt"></a>
+				<a href="#" target="_blank" class ="rstblock rstblockt"></a>
+				<a href="#" target="_blank" class ="rstblock rstblockt"></a>
+				<a href="#" target="_blank" class ="rstblock rstblockt"></a>
+				<a href="#" target="_blank" class ="rstblock rstblockt"></a>
+				<a href="#" target="_blank" class ="rstblock rstblockt"></a>
+				<a href="#" target="_blank" class ="rstblock rstblockt"></a>
+				<a href="#" target="_blank" class ="rstblock rstblockt"></a>
+				<a href="#" target="_blank" class ="rstblock rstblockt"></a>
+				<a href="#" target="_blank" class ="rstblock rstblockt"></a>
+				<a href="#" target="_blank" class ="rstblock rstblockt"></a>
+				<a href="#" target="_blank" class ="rstblock rstblockt"></a>
+				<a href="#" target="_blank" class ="rstblock rstblockt"></a>
+				<a href="#" target="_blank" class ="rstblock rstblockt"></a>
+				<a href="#" target="_blank" class ="rstblock rstblockt"></a>
+           </div>
+            
+ 
+<!-- 尾部 -->
+		<div id ="height50"></div>
+       <div id= "foot">
+         <div id = "footm">
+			<div id ="foot1" class="footm1">
+				<h3>用户帮助</h3>
+				<a href="#" target="_black">服务中心</a>
+				<a href="#" target="_black">常见问题</a>
+			</div>
+			<div id ="foot1" class="footm2">
+			    <h3>商务合作</h3>
+			    <a href="#" target="_blank">我要开店</a> 
+			    <a href="http://support/about/jiameng" target="_blank">加盟指南</a> 
+			    <a href="http://support/about/contact" target="_blank">市场合作</a> 
+			    <a href="http://openapi.eleme.io/" target="_blank">开放平台</a>
+			</div>
+			<div id ="foot1" class="footm3">
+				<h3>关于我们</h3>
+				<a href="http://support/about" target="_blank">饿了么介绍</a> 
+				<a href="http://jobs.ele.me/" target="_blank">加入我们</a> 
+				<a href="/support/about/contact" target="_blank">联系我们</a> 
+				<a href="//h5.ele.me/service/agreement" target="_blank" ">规则中心</a>
+			</div>
+			<div id ="foot4">
+			     <p class="footer1">
+			         24小时客服热线 : 
+			         <a class="inherit" href="tel:10105757">10105757</a>
+			     </p>
+			     <p class="footer1">
+			         意见反馈 : 
+			         <a class="inherit" href="mailto:feedback@ele.me">feedback@ele.me</a>
+			     </p>
+			     <div class="footer1" id = "footeg">
+			         关注我们 :
+			         <span id = "icon1" class="iconfont icon-weixin"></span>
+			         <div id="dropbox" style="display: none">
+			            <img src="http://faas.elemecdn.com/desktop/media/img/wexinqc100@2x.393ade.png" alt="微信号: elemeorder" style="width:130px; height:130px">
+			             <p>微信号: elemeorder</p>
+			             <p>饿了么网上订餐</p>
+			         </div>
+			         <span class="iconfont icon-weibo1"></span>
+                 </div>
+            </div>
+			<div id ="foot5">
+				  <a href="https://h.ele.me/landing" target="_blank">
+				     <img src="//faas.elemecdn.com/desktop/media/img/appqc.95e532.png" class="footer-mobile-icon" alt="扫一扫下载饿了么手机 App" style="width:90px;height:90px;margin-right: 20px;float: left;">
+				  </a>
+				  <div class="footer-mobile">
+				    <h3>下载手机版</h3>
+				    <p>扫一扫,手机订餐方便</p>
+				  </div>
+			</div>
+			<div id ="foot6">
+				<h5 class="owner">
+				   所有方：上海拉扎斯信息科技有限公司
+				</h5>
+				<div id = "hu">
+					   增值电信业务许可证 :  
+					  <a href="http://www.shca.gov.cn/" target="_blank">沪B2-20150033</a> 
+					  | 
+					  <a href="http://www.miibeian.gov.cn/" target="_blank">沪ICP备 09007032
+					  </a> 
+					  | 
+					  <a href="http://www.sgs.gov.cn/lz/licenseLink.do?method=licenceView&amp;entyId=20120305173227823" target="_blank">上海工商行政管理</a> 
+					   Copyright ©2008-2017 ele.me, All Rights Reserved.  
+				</div>
+			</div>
+			<div id ="foot7">
+				   <img alt="已通过沪公网备案，备案号 310100103568" src="//faas.elemecdn.com/desktop/media/img/picp_bg.e373b3.jpg" height="30">
+			</div>
+         </div>
+       </div>
+
+	</div>
+	<script src = "js/jquery-1.10.1.min.js"></script>
+    <!-- <script src = "js/tool.js"></script>  -->
+	<script src = "js/HOME.js"></script>
+</body>
+</html>

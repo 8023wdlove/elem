@@ -1,0 +1,227 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+div {
+  display: block; }
+
+a {
+  text-decoration: none;
+  color: #000; }
+
+html {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: inherit;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: inherit;
+  justify-content: center;
+  align-items: center; }
+
+#warp {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: inherit;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; }
+
+.content {
+  display: flex;
+  width: 300px;
+  height: 800px;
+  box-sizing: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.register {
+  color: #0da2ff;
+  font-size: 20px;
+  margin-top: 10px;
+  font-weight: 500; }
+
+.login {
+  position: relative;
+  box-sizing: inherit;
+  margin-top: 40px;
+  text-align: center;
+  float: left;
+  font-weight: 700; }
+  .login a {
+    font-size: 14px;
+    font-family: "宋体"; }
+  .login a:nth-of-type(1) {
+    margin-right: 40px; }
+  .login .blue {
+    color: #0da2ff; }
+  .login .blue_wire {
+    background: #0da2ff;
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    z-index: 5;
+    display: block;
+    bottom: -10px; }
+
+.register_menu {
+  box-sizing: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .register_menu .user_error, .register_menu .pwd_error, .register_menu .rpassword_error, .register_menu .phone_error, .register_menu .authCode_error {
+    margin-top: 5px;
+    color: #FF0000; }
+  .register_menu .low, .register_menu .center, .register_menu .tall {
+    width: 70px;
+    height: 30px;
+    margin-right: 10px;
+    border: 1px solid #0da2ff;
+    float: left;
+    margin-top: 5px;
+    color: #0da2ff;
+    line-height: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px; }
+  .register_menu .pwd_error_blue {
+    color: #fff;
+    background: #0da2ff; }
+  .register_menu .register_box {
+    width: 300px;
+    height: 48px;
+    margin-top: 16px;
+    position: relative;
+    background: #fff;
+    box-sizing: inherit;
+    border-radius: 5px;
+    color: #999;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .register_menu .register_box .username, .register_menu .register_box .rpassword, .register_menu .register_box .nextrpassword, .register_menu .register_box .phone {
+      width: 290px;
+      height: 100%;
+      display: block;
+      border: 0;
+      border-radius: 5px;
+      border: 1px solid #dddddd;
+      padding-left: 10px;
+      color: #999; }
+    .register_menu .register_box #authCode {
+      width: 150px;
+      height: 100%;
+      display: block;
+      border: 0;
+      border-radius: 5px;
+      border: 1px solid #dddddd;
+      padding-left: 10px;
+      color: #999; }
+    .register_menu .register_box #randomImg {
+      width: 120px;
+      height: 100%;
+      display: block;
+      border: 0;
+      border-radius: 5px;
+      border: 1px solid #dddddd;
+      padding-left: 10px;
+      color: #999;
+      margin-left: 10px;
+      text-align: center;
+      line-height: 48px;
+      font-size: 26px; }
+    .register_menu .register_box .hideShow {
+      width: 40px;
+      height: 14px;
+      position: absolute;
+      top: 17px;
+      right: 10px;
+      background: #fff;
+      border: 1px solid #ddd;
+      color: #cccccc;
+      line-height: 4px;
+      border-radius: 10px;
+      text-align: center;
+      padding-left: 5px; }
+      .register_menu .register_box .hideShow .ball {
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        border-radius: 50%;
+        border: 1px solid #ddd;
+        top: -1px;
+        left: -1px;
+        box-shadow: 0px 0px 1px #888888;
+        background-color: #fff; }
+  .register_menu .deal {
+    width: 100%;
+    font-size: 14px;
+    color: #999;
+    margin-top: 10px; }
+    .register_menu .deal a {
+      color: #2395ff; }
+  .register_menu .btnLogin {
+    width: 100%;
+    height: 42px;
+    color: #fff;
+    background-color: #4cd96f;
+    font-size: 16px;
+    border: 0;
+    border-radius: 5px;
+    margin-top: 30px; }
+  .register_menu .about {
+    display: block;
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    color: #999; }
+  .register_menu .cellPhone {
+    width: 300px;
+    height: 48px; }
+
+.foot_background {
+  display: block;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  background: #f5f5f5;
+  bottom: 0;
+  align-self: flex-end;
+  align-items: center;
+  height: 104px;
+  text-align: center; }
+  .foot_background h2 {
+    font-size: 12px;
+    color: #555;
+    margin: 0;
+    font-weight: 400;
+    display: block;
+    line-height: 18px;
+    text-align: center;
+    margin-top: 15px; }
+  .foot_background p {
+    margin: 0;
+    font-weight: 400;
+    display: block;
+    color: #999;
+    line-height: 18px;
+    text-align: center;
+    font-size: 12px; }
+  .foot_background img {
+    margin-top: 10px; }

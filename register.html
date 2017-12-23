@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<link rel="stylesheet" type="text/css" href="css/register.css">
+		<script type="text/javascript" src = "js/jquery-3.2.1.js"></script>
+		<script type="text/javascript" src = "js/jquery-ui.js"></script>
+		<script type="text/javascript" src = "js/require.js" defer async = "true" data-main = "js/project"></script>
+		<script type="text/javascript" src = "css/project.js"></script>
+	</head>
+	<body>
+		<div id = "warp">
+			<div class = "content">
+				<div class = "head">
+					<img src = "images/elogo.jpg" title = "饿了吗logo" name= "logo" />
+				</div>
+				<div class="register">用户注册</div>
+				<form class = "register_menu" action="index.html" method="post">
+					<div class = "register_box">
+						<input type="text" name="username" placeholder="请输入邮箱或者手机号" class="username">
+					</div>
+					<div class="user_error"></div>
+					<div class = "register_box">
+						<input type="password" name="rpassword" placeholder="请输入密码" class="rpassword">
+					</div>
+					<div class="pwd_error">
+						<!-- <div class="low">弱</div>
+						<div class="center">中</div>
+						<div class="tall">强</div> -->
+					</div>
+					<div class = "register_box">
+						<input type="password" name="nextrpassword" placeholder="请再次输入密码" class="nextrpassword">
+					</div>
+					<div class="rpassword_error"></div>
+					<div class = "register_box">
+						<input type="text" name="phone" placeholder="请输入手机号" class="phone">
+					</div>
+					<div class="phone_error"></div>
+					<div class = "register_box">
+						<input type="text" name="authCode" placeholder="验证码" id="authCode">
+						<input type="text" id="randomImg">
+					</div>
+					<div class="authCode_error"></div>
+					<div class="deal">
+						温馨提示：未注册饿了么帐号的手机号，登录时将自动注册，且代表您已同意<a href="#">《用户服务协议》</a>
+					</div>
+					<input type="button" name="name" value="注册" class="btnLogin">
+					<a href="#" class="about">关于我们</a>
+				</form>
+			</div>
+		</div>
+		<div class="foot_background">
+				<h2>所有方：上海拉斯信息科技有限公司</h2>
+				<p> 增值电信业务许可证 :沪B2-20150033|沪ICP备 09007032|上海工商行政管理 Copyright ©2008-2017 ele.me, All Rights Reserved.</p>
+				<img alt="已通过沪公网备案，备案号 310100103568" src="//faas.elemecdn.com/desktop/media/img/picp_bg.e373b3.jpg" height="30">
+		</div>
+	</body>
+</html>

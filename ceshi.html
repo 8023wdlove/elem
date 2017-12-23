@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+// 			var arr = [
+
+// 				{	"type":"热销","details":[{"src":"images/a4fb066bdabf337c193ccc5c685acjpeg.jpeg","miaoshu":"芝士沙拉脆皮鸡肉饭（大份）和汇源饮料","miaoshu2":"33333333333","star":"4","grade":"35","sales":"276","price":"26"},{"src":"images/a4fb066bdabf337c193ccc5c685acjpeg.jpeg","miaoshu":"芝士沙拉脆皮鸡肉饭（大份）和汇源饮料","miaoshu2":"33333333333","star":"4","grade":"35","sales":"276","price":"26"},{"src":"images/a4fb066bdabf337c193ccc5c685acjpeg.jpeg","miaoshu":"芝士沙拉脆皮鸡肉饭（大份）和汇源饮料","miaoshu2":"33333333333","star":"4","grade":"35","sales":"276","price":"26"},{"src":"images/a4fb066bdabf337c193ccc5c685acjpeg.jpeg","miaoshu":"芝士沙拉脆皮鸡肉饭（大份）和汇源饮料","miaoshu2":"33333333333","star":"4","grade":"35","sales":"276","price":"26"}]},
+// 					{	"type":"热销","details":[{"src":"images/a4fb066bdabf337c193ccc5c685acjpeg.jpeg","miaoshu":"芝士沙拉脆皮鸡肉饭（大份）和汇源饮料","miaoshu2":"33333333333","star":"4","grade":"35","sales":"276","price":"26"},{"src":"images/a4fb066bdabf337c193ccc5c685acjpeg.jpeg","miaoshu":"芝士沙拉脆皮鸡肉饭（大份）和汇源饮料","miaoshu2":"33333333333","star":"4","grade":"35","sales":"276","price":"26"},{"src":"images/a4fb066bdabf337c193ccc5c685acjpeg.jpeg","miaoshu":"芝士沙拉脆皮鸡肉饭（大份）和汇源饮料","miaoshu2":"33333333333","star":"4","grade":"35","sales":"276","price":"26"},{"src":"images/a4fb066bdabf337c193ccc5c685acjpeg.jpeg","miaoshu":"芝士沙拉脆皮鸡肉饭（大份）和汇源饮料","miaoshu2":"33333333333","star":"4","grade":"35","sales":"276","price":"26"}]},
+// 					{	"type":"热销","details":[{"src":"images/a4fb066bdabf337c193ccc5c685acjpeg.jpeg","miaoshu":"芝士沙拉脆皮鸡肉饭（大份）和汇源饮料","miaoshu2":"33333333333","star":"4","grade":"35","sales":"276","price":"26"},{"src":"images/a4fb066bdabf337c193ccc5c685acjpeg.jpeg","miaoshu":"芝士沙拉脆皮鸡肉饭（大份）和汇源饮料","miaoshu2":"33333333333","star":"4","grade":"35","sales":"276","price":"26"},{"src":"images/a4fb066bdabf337c193ccc5c685acjpeg.jpeg","miaoshu":"芝士沙拉脆皮鸡肉饭（大份）和汇源饮料","miaoshu2":"33333333333","star":"4","grade":"35","sales":"276","price":"26"},{"src":"images/a4fb066bdabf337c193ccc5c685acjpeg.jpeg","miaoshu":"芝士沙拉脆皮鸡肉饭（大份）和汇源饮料","miaoshu2":"33333333333","star":"4","grade":"35","sales":"276","price":"26"}]},
+// 					{	"type":"热销","details":[{"src":"images/a4fb066bdabf337c193ccc5c685acjpeg.jpeg","miaoshu":"芝士沙拉脆皮鸡肉饭（大份）和汇源饮料","miaoshu2":"33333333333","star":"4","grade":"35","sales":"276","price":"26"},{"src":"images/a4fb066bdabf337c193ccc5c685acjpeg.jpeg","miaoshu":"芝士沙拉脆皮鸡肉饭（大份）和汇源饮料","miaoshu2":"33333333333","star":"4","grade":"35","sales":"276","price":"26"},{"src":"images/a4fb066bdabf337c193ccc5c685acjpeg.jpeg","miaoshu":"芝士沙拉脆皮鸡肉饭（大份）和汇源饮料","miaoshu2":"33333333333","star":"4","grade":"35","sales":"276","price":"26"},{"src":"images/a4fb066bdabf337c193ccc5c685acjpeg.jpeg","miaoshu":"芝士沙拉脆皮鸡肉饭（大份）和汇源饮料","miaoshu2":"33333333333","star":"4","grade":"35","sales":"276","price":"26"}]},
+// 					{	"type":"热销","details":[{"src":"images/a4fb066bdabf337c193ccc5c685acjpeg.jpeg","miaoshu":"芝士沙拉脆皮鸡肉饭（大份）和汇源饮料","miaoshu2":"33333333333","star":"4","grade":"35","sales":"276","price":"26"},{"src":"images/a4fb066bdabf337c193ccc5c685acjpeg.jpeg","miaoshu":"芝士沙拉脆皮鸡肉饭（大份）和汇源饮料","miaoshu2":"33333333333","star":"4","grade":"35","sales":"276","price":"26"},{"src":"images/a4fb066bdabf337c193ccc5c685acjpeg.jpeg","miaoshu":"芝士沙拉脆皮鸡肉饭（大份）和汇源饮料","miaoshu2":"33333333333","star":"4","grade":"35","sales":"276","price":"26"},{"src":"images/a4fb066bdabf337c193ccc5c685acjpeg.jpeg","miaoshu":"芝士沙拉脆皮鸡肉饭（大份）和汇源饮料","miaoshu2":"33333333333","star":"4","grade":"35","sales":"276","price":"26"}]},
+// 					{	"type":"热销","details":[{"src":"images/a4fb066bdabf337c193ccc5c685acjpeg.jpeg","miaoshu":"芝士沙拉脆皮鸡肉饭（大份）和汇源饮料","miaoshu2":"33333333333","star":"4","grade":"35","sales":"276","price":"26"},{"src":"images/a4fb066bdabf337c193ccc5c685acjpeg.jpeg","miaoshu":"芝士沙拉脆皮鸡肉饭（大份）和汇源饮料","miaoshu2":"33333333333","star":"4","grade":"35","sales":"276","price":"26"},{"src":"images/a4fb066bdabf337c193ccc5c685acjpeg.jpeg","miaoshu":"芝士沙拉脆皮鸡肉饭（大份）和汇源饮料","miaoshu2":"33333333333","star":"4","grade":"35","sales":"276","price":"26"},{"src":"images/a4fb066bdabf337c193ccc5c685acjpeg.jpeg","miaoshu":"芝士沙拉脆皮鸡肉饭（大份）和汇源饮料","miaoshu2":"33333333333","star":"4","grade":"35","sales":"276","price":"26"}]},
+// 					{	"type":"热销","details":[{"src":"images/a4fb066bdabf337c193ccc5c685acjpeg.jpeg","miaoshu":"芝士沙拉脆皮鸡肉饭（大份）和汇源饮料","miaoshu2":"33333333333","star":"4","grade":"35","sales":"276","price":"26"},{"src":"images/a4fb066bdabf337c193ccc5c685acjpeg.jpeg","miaoshu":"芝士沙拉脆皮鸡肉饭（大份）和汇源饮料","miaoshu2":"33333333333","star":"4","grade":"35","sales":"276","price":"26"},{"src":"images/a4fb066bdabf337c193ccc5c685acjpeg.jpeg","miaoshu":"芝士沙拉脆皮鸡肉饭（大份）和汇源饮料","miaoshu2":"33333333333","star":"4","grade":"35","sales":"276","price":"26"},{"src":"images/a4fb066bdabf337c193ccc5c685acjpeg.jpeg","miaoshu":"芝士沙拉脆皮鸡肉饭（大份）和汇源饮料","miaoshu2":"33333333333","star":"4","grade":"35","sales":"276","price":"26"}]},
+// 				{	"type":"传奇","details":[{"src":"images/a4fb066bdabf337c193ccc5c685acjpeg.jpeg","miaoshu":"芝士沙拉脆皮鸡肉饭（大份）和汇源饮料","miaoshu2":"33333333333","star":"4","grade":"35","sales":"276","price":"26"},{"src":"images/a4fb066bdabf337c193ccc5c685acjpeg.jpeg","miaoshu":"芝士沙拉脆皮鸡肉饭（大份）和汇源饮料","miaoshu2":"33333333333","star":"4","grade":"35","sales":"276","price":"26"},{"src":"images/a4fb066bdabf337c193ccc5c685acjpeg.jpeg","miaoshu":"芝士沙拉脆皮鸡肉饭（大份）和汇源饮料","miaoshu2":"33333333333","star":"4","grade":"35","sales":"276","price":"26"},{"src":"images/a4fb066bdabf337c193ccc5c685acjpeg.jpeg","miaoshu":"芝士沙拉脆皮鸡肉饭（大份）和汇源饮料","miaoshu2":"33333333333","star":"4","grade":"35","sales":"276","price":"26"}]}
+
+
+
+
+// 			]
+
+// 			console.log(arr);
+
+
+
+
+// var a='<li><h4><span id="comuser">匿名用户</span><spanid="comtime">2017-10-2212:00:00</span></h4><divid="comresult"><p><iclass="iconfont icon-xihao"></i><iclass="iconfont icon-xihao"></i><iclass="iconfont icon-xihao"></i><iclass="iconfont icon-xihao"></i><iclass="iconfont icon-xihao"></i><spanid="pleased">满意</span><spanid="timesend">40分钟送达</span></p></div><divid="specificcom"><spanid="describe">不够吃来份米</span><iclass="iconfont icon-like"></i><iclass="iconfont icon-like"></i><iclass="iconfont icon-like"></i><iclass="iconfont icon-like"></i><iclass="iconfont icon-like"></i><spanid="describeresult">满意</span><aid="showpic"href="">查看图片</a></div><divid="specificcom"><spanid="describe">不够吃来份米</span><iclass="iconfont icon-like"></i><iclass="iconfont icon-like"></i><iclass="iconfont icon-like"></i><iclass="iconfont icon-like"></i><iclass="iconfont icon-like"></i><spanid="describeresult">满意</span><aid="showpic"href="">查看图片</a></div><divid="specificcom"><spanid="describe">不够吃来份米</span><iclass="iconfont icon-like"></i><iclass="iconfont icon-like"></i><iclass="iconfont icon-like"></i><iclass="iconfont icon-like"></i><iclass="iconfont icon-like"></i><spanid="describeresult">满意</span><aid="showpic"href="">查看图片</a></div><spanid="userinfo"><imgsrc="images/default-avatar.38e40d.png"alt=""></span></li>'
+
+
+
+
+//  var brr = [
+ 		
+//  		[
+//  			{"user":"匿名用户","time":"2017-10-2212:00:00","com":"满意","send":"40分钟送达"},
+//  			[
+//  			{"describe":"宫保鸡丁","com":"满意","pic":"查看图片"},
+//  			{"describe":"海鲜疙瘩汤","com":"满意","pic":"查看图片"},
+//  			{"describe":"红烧茄子","com":"不满意","pic":"查看图片"},
+//  			{"describe":"宫保鸡丁","com":"不满意","pic":"查看图片"}
+//  			]	
+//  		],
+//  		[
+//  			{"user":"匿名用户","time":"2017-10-2312:00:00","com":"满意","send":"40分钟送达"},
+//  			[
+//  			{"describe":"红烧茄子","com":"不满意","pic":"查看图片"},
+//  			{"describe":"宫保鸡丁","com":"不满意","pic":"查看图片"}
+//  			]	
+//  		],
+//  		[
+//  		{"user":"匿名用户","time":"2017-10-2212:00:00","com":"满意","send":"40分钟送达"},
+//  			[
+//  			{"describe":"宫保鸡丁","com":"满意","pic":"查看图片"},
+//  			{"describe":"海鲜疙瘩汤","com":"满意","pic":"查看图片"},
+//  			{"describe":"红烧茄子","com":"不满意","pic":"查看图片"},
+//  			{"describe":"宫保鸡丁","com":"不满意","pic":"查看图片"}
+//  			]	
+//  		],
+//  		[
+//  			{"user":"匿名用户","time":"2017-10-2312:00:00","com":"满意","send":"40分钟送达"},
+//  			[
+//  			{"describe":"红烧茄子","com":"不满意","pic":"查看图片"},
+//  			{"describe":"宫保鸡丁","com":"不满意","pic":"查看图片"}
+//  			]	
+//  		]
+
+//  		]
+
+
+
+var arr = [{"shoppic":"images/1bd003d49c8e5b57d69879e2283d6jpeg.jpeg.png","shopname":"隆川蜀味菜馆","stars":"(71)","sales":"月售100单","grade":"4.7","compare1":"63.0%","compare":"4.7","shopaddinfo":"山东省青岛市黄岛区井冈山路545-3-1号","shoptimeinfo":"10:15-23:30","sendshop":"台资味（青岛黄岛井冈山路店）","startprice":"20元","price":"配送费￥4","minute":"20分钟"}]
+
+
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,367 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+body{
+	font-family : PingFang SC,Lantinghei SC,Helvetica Neue,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style:none;
+}
+.all{
+	top:0;
+	right:0;
+	height:500px;	
+	background-size:cover;
+	background:url(../images/map.png) center no-repeat;
+}
+.allmiddle{
+	width:1180px;
+	margin:0 auto;	
+}
+.over{
+	overflow: hidden;
+}
+.allmiddle1{
+	color:#fff;
+	height: 45px;
+	display: flex;
+    margin-top:25px;
+	line-height: 45px;
+	justify-content: space-between;
+}
+.allmiddle1-1 img{
+	height:22.5px;
+	width:220px;
+	vertical-align: middle;
+}
+.allmiddle1-2{
+ 	word-spacing: 0.4em;
+}
+.allmiddle1-2 a{
+	color: inherit;
+	font-size: 16px;
+	vertical-align: middle;
+}
+.allmiddle1-2 .setup{
+	font-size: 12px;
+	margin-left: 10px;
+	padding:5px 14px;
+	border-radius: 2px;
+	background-color:#5db423;
+}
+.allmiddle2{
+	width:1180px;
+	height:185px;
+	margin-top:11%;
+ 	position:relative;
+ 	text-align: center;
+}
+.allmiddle2 .allmiddle2-1{
+	width: 232px;
+	height: 59px;
+	margin: 24px 0 40px;
+	display: inline-block;
+	background: url(../img/join.png) center no-repeat;
+
+}
+.allmiddle2 .allmiddle2-2{
+	width: 50%;
+	height:56px;
+	margin:0 auto;
+	line-height: 56px;
+}
+.allmiddle2-2 .address{
+	float:left;
+	width:100px;
+}
+.address .addressq{
+	color:#333;
+	height:57px;
+	display: block;
+	background:#fff;
+	font-size: 20px;
+	position:relative; 
+}
+.addressq .addressx{
+	display: inline-block;
+    vertical-align: middle;
+	border-top: 5px solid #999;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;	
+} 
+.address .detail{
+	margin-top: 30px;
+	width: 730px;
+	z-index: 1200;
+	position: absolute;
+	background-color: #fff;
+	box-shadow: 0 20px 20px 0 rgba(0,0,0,.085);
+	display: none;/*更改*/	    
+}
+.address .detail1{
+  top: 0;
+  left: 50px;
+  margin-top:-20px;
+  position:absolute;
+  border: 10px solid transparent;
+  border-bottom-color: transparent;
+  border-bottom-color: #fff;
+}
+.detail .detail2{
+	 overflow-y: auto; 
+     height: 300px;  
+	margin:0 auto;
+	padding:0 30px 0 23px;
+}    
+.detail2 .detail2-1{
+	color:#333;
+	display: flex;
+	font-size:14px;
+	line-height: 45px;
+	border-bottom: 1px solid #eee;
+	justify-content: space-between;
+}
+.detail2 .detail2-1 p{
+	font-size: 13px;
+	margin-left: 130px;
+}
+.detail2 .detail2-1 .detail2-11{
+	margin-right: 50px;
+}
+.detail2 .detail2-1.detail2-1 span{
+	color:#0089dc;
+}
+.detail2-2{
+	display:flex;
+	line-height: 63px;
+	justify-content:center;
+	border-bottom: 1px solid #eee;	
+}
+.detail2-2 .detail2-21{
+	color:#0089dc;
+	font-size: 14px;
+    padding-right: 2em;
+}
+.detail2-21{
+	margin-left: -25px;
+}
+.detail2-2 .detail2-21 .btn{
+	color: #fff;
+	border: none;
+	cursor:pointer;
+	font-size: 16px;
+	margin: 0 0 0 14px;
+	padding: 2px 16px;
+	background: #ff6000;
+	border-radius: 3px;
+}
+.detail2-22{
+	height: 30px;
+	padding-left: 2em;
+	line-height: 30px;
+	margin-top: 12px;
+	border-left: 1px solid #ddd;
+}
+.detail2-22 .inp{
+	outline: 0;
+	width: 200px;
+	font-size: 12px;
+	line-height: 28px;
+	padding: 0 12px 0 15px;
+	background-color: #f5f5f5;
+	border: 1px solid #ededed;
+}
+.detail2-3{
+	overflow:hidden;
+	position:relative;
+	border-bottom: 1px solid #eee;
+}
+.detail2-3 h3{
+	left:0;
+	color:#0089dc;
+	font-weight: 400;
+	font-size: 16px;
+	position:absolute;
+}
+.detail2-3 ul{
+	margin-left:45px;
+}
+.detail2-3 ul li{
+	float:left;
+	width:77px;
+	text-align: left;
+	line-height: 40px;
+	overflow: hidden;
+	white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.detail2-3 ul li a{
+	color: #333;
+	font-size: 14px;
+}
+.detail2-3 ul li a:hover{
+	color:#0089dc;
+}
+.search{
+	width:70%;
+	float: left;
+	position:relative;
+}
+.search .line{
+	left: 0;
+	top: 13px;
+	height: 30px;
+	position: absolute;
+	border-left: 1px solid #dcdcdc;
+}
+.search .form{
+	height: 56px;
+	background-color: #fff;
+}
+.search .form .forminp{
+	height: 100%;
+	border: none;
+	outline: 0;
+	padding-left: 18px;
+	width: 100%;
+	font-size: 16px;
+}
+.search .form .searchbtn{
+	top: 0;
+	color: #fff;
+	outline: 0;
+	border:none;
+	right: -138px;
+	width: 128px;
+	cursor: pointer;
+	border-radius: 2px;
+	line-height: 56px;
+	font-size: 20px;
+	position: absolute;
+	background-color: #f74342;
+}
+
+.search .menu{
+	z-index: 1100;
+    position: absolute;
+    top: 56px;
+    left: 0;
+    width: 100%;
+    height:300px;
+    display: none;
+    background-color: #fff;
+    box-shadow: 0 20px 20px 0 rgba(0,0,0,.085);
+    overflow-y: auto;
+}
+.menu li{
+	cursor: pointer;
+	padding-left: 18px;
+	line-height: 58px;
+	border-top: 1px solid #eee;
+}
+.menu li:hover{
+	background-color: #f2f5f7;
+}
+
+/*.menu ul li p{
+	font-size: 14px;
+	padding-top: 10px;
+	line-height: normal;
+}
+.menu ul li .nearby{
+	color:#999;
+	font-size: 12px;
+	padding:0 0 10px 0;
+}*/
+
+/*尾部*/
+
+.foot{
+	background:#fff;
+}
+.footmiddle{
+	height:404px;
+	width:1180px;
+	margin:0 auto;
+	text-align: center;
+}
+.footmiddle .foottop{
+	width:402px;
+	margin:0 auto;
+	display: flex;
+	text-align: left;
+	padding-top: 60px;
+	padding-bottom: 90px;
+	justify-content: space-between;
+}
+.foottop .foottop1{
+    height:165px;
+	width: 160px;
+	padding: 15px;
+	position: relative;
+	border: 1px solid #ddd;
+}
+.foottop1 img{
+	width:128px;
+	height:128px;
+}
+.foottop1 span{
+    position: absolute;
+	bottom: 0;
+	margin-bottom: -10px;
+	left: 25px;
+	right: 25px;
+	background-color: #fff;
+	text-align: center;
+	color: #999;
+}
+.foottop .foottop2{
+	height:93px;
+	width:222px;
+ 	font-size: 16px;
+ 	margin-top:30px;
+}
+.foottop .foottop2 p{
+	color:#333;
+	font-size: 16px;
+} 
+.foottop .foottop2 b{
+	color:#f74342;
+	font-size: 30px;
+	line-height: 50px;
+}
+.Mfoot{
+	color: #666;
+	font-size: 12px;
+	line-height: 1;
+	margin-bottom: 10px;
+}
+
+.Mfoot a {
+    display: inline-block;
+    padding: 0 7px;
+    color: inherit;
+    border-left: 1px solid #ccc;
+}
+.Mfoot a:nth-of-type(1){
+	border:none;
+}
+.footer{
+	font-size: 12px;
+	color: #999;
+	text-align: center;
+}
+.footer a{
+    font-family: Palatino,Optima,Georgia,serif;
+	color: inherit;
+}
+.footend {
+	padding: .5em 0;
+}
+
+
