@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Homepage</title>
+    <script src = "js/jquery-1.10.1.min.js"></script>
+    <script src = "js/Homepage.js"></script>  
+	<link rel="stylesheet" href="css/Homepage.css"/>
+</head>
+<body>
+<!-- 顶部 -->
+	  
+
+	<div class="all">
+		<div class="allmiddle">
+		  <div class="over">
+			<div class="allmiddle1">
+				<div class="allmiddle1-1">
+					<img src="images/logo.png" alt=""/>
+				</div>
+				<div class="allmiddle1-2">
+					<a href="#">注册</a>
+					<span>|</span>
+					<a href="#">登录</a>
+					<a  class = "setup" href="#">我要开店</a>
+				</div>
+			</div>
+		 </div>	
+			<div class="allmiddle2">
+				<a class="allmiddle2-1" href="#"></a>
+				<div class="allmiddle2-2">
+				<!-- 地址定位 -->
+					<div class="address" id = "a1">
+						<a class="addressq" href="#">青岛
+						   <span class="addressx" href="#"></span>
+						</a>
+						<!-- 所有的地址 -->
+						<div class="detail">
+							<span class="detail1" href="#"></span>
+							<div class="detail2">
+								<div class="detail2-1">
+								    <p>请选择你所在的城市</p>
+									<div class="detail2-11">
+										<span>选城市</span> 
+										 > 定位置 > 叫外卖
+									</div>
+								</div>
+								<div class="detail2-2">
+									<div class="detail2-21">
+											猜你在
+										<button class="btn" name="btn">青岛</button>
+									</div>
+									<div class="detail2-22">
+										<input type="text" placeholder="请输入城市" name="city" class="inp"/>
+									</div>
+								</div> 
+								<!-- 具体的所有的地址 -->
+								<div class="detail2-3">
+								  <!-- <div class="definite1"> -->
+									<!-- <h3>A</h3>
+									<ul>
+										<li><a href="#">安吉</a></li>
+										<li><a href="#">安阳</a></li>
+										<li><a href="#">阿拉尔</a></li>
+										<li><a href="#">阿拉尔山口</a></li>
+										<li><a href="#">阿克苏地区</a></li>
+										<li><a href="#">阿克苏</a></li>
+										<li><a href="#">阿瓦提</a></li>
+										<li><a href="#">阿图什</a></li>
+										<li><a href="#">阿克陶</a></li>
+										<li><a href="#">阿合奇</a></li>
+										<li><a href="#">阿勒泰地区</a></li>
+										<li><a href="#">阿勒泰</a></li>
+										<li><a href="#">安庆</a></li>
+										<li><a href="#">安陆</a></li>
+										<li><a href="#">澳门</a></li>
+										<li><a href="#">安溪</a></li>
+										<li><a href="#">安化</a></li>
+										<li><a href="#">安乡</a></li>
+										<li><a href="#">安仁</a></li>
+										<li><a href="#">安岳</a></li>
+										<li><a href="#">阿坝藏族</a></li>
+										<li><a href="#">阿坝</a></li>
+										<li><a href="#">安义</a></li>
+										<li><a href="#">安远</a></li>
+										<li><a href="#">安福</a></li>
+										<li><a href="#">安顺</a></li>
+										<li><a href="#">安龙</a></li>
+										<li><a href="#">安平</a></li>
+										<li><a href="#">安新</a></li>
+										<li><a href="#">安国</a></li>
+										<li><a href="#">鞍山</a></li>
+										<li><a href="#">安丘</a></li>
+										<li><a href="#">安宁</a></li>
+										<li><a href="#">安康</a></li>
+										<li><a href="#">安塞</a></li>
+										<li><a href="#">安泽</a></li>
+										<li><a href="#">安图</a></li>
+										<li><a href="#">昂仁</a></li>
+										<li><a href="#">安多</a></li>
+										<li><a href="#">阿里地区</a></li>
+										<li><a href="#">阿克塞哈</a></li>
+										<li><a href="#">阿鲁科尔</a></li>
+										<li><a href="#">敖汉旗</a></li>
+										<li><a href="#">阿尔山</a></li>
+										<li><a href="#">阿巴嘎旗</a></li>
+										<li><a href="#">阿拉善盟</a></li>
+										<li><a href="#">阿拉善盟左旗</a></li>
+										<li><a href="#"阿拉善盟右旗></a></li>
+										<li><a href="#">阿荣旗</a></li>
+										<li><a href="#">安达</a></li>
+									</ul> -->
+								  <!-- </div> -->
+								</div>
+							</div>
+						</div>
+					</div>
+
+				<!-- input框搜寻 -->
+					<div class="search">
+					<!-- input前的竖杠 -->
+					   <span class="line"></span>
+					   <form action="formlable" name="lable" class="form">	
+						  <input type="text" name="search" placeholder="请输入你的收货地址(写字楼，小区，街道或者学校)" class="forminp" id="one">
+						  <button class="searchbtn" name="formbtn">搜索</button>
+					   </form>
+
+					   <!-- input的下拉菜单 -->
+
+					   <div class="menu" id="two">
+							<ul>
+							   <!-- <li>
+							      <p>中国海洋大学(崂山校区)</p>
+							      <p class = "nearby">
+									<span>山东省青岛市崂山区松岭路238号</span>
+									<span> 附近有506家商家</span>
+							      </p>
+							   </li>
+							   <li>
+							      <p>中国海洋大学崂山校区南区学生社区</p>
+							      <p class = "nearby">
+									<span>山东省青岛市崂山区松岭路238号中国海洋大学(崂山校区)</span>
+									<span> 附近有517家商家</span>
+							      </p>
+							   </li>
+							   <li>
+							     <p>鲁信含章花园</p>
+							     <p class = "nearby">
+							       <span>山东省青岛市崂山区合肥路851号(合肥路与劲松九路的交汇处)</span>
+							       <span> 附近有1465家商家</span>
+							     </p>
+							   </li>
+							   <li>
+							     <p>青岛大学(西院)</p>
+							     <p class = "nearby">
+									<span>山东省青岛市崂山区宁夏路308号青岛大学西院内(近高雄路)</span>
+									<span> 附近有1923家商家</span>
+							     </p>
+							   </li> -->
+							</ul>
+					   </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>  
+      
+<!-- 尾部 -->
+
+	<div class="foot">
+		<div class="footmiddle">
+			<div class="foottop">
+				<div class="foottop1">
+				  <img src="images/appcard.png" alt=""/>
+				  <span>扫码下载APP</span>
+				</div>
+				<div class="foottop2">
+					<p>新用户首次下单</p>
+					<b>最高立减30元</b>
+					<p>立即下载APP,享更多优惠吧！</p>
+				</div>
+			</div>
+			 <p class="Mfoot">
+			    <a href="http://kaidian.ele.me" ubt-click="1434">我要开店</a>
+				<a href="http://support/about" ubt-click="1435">联系我们</a>
+				<a href="http://support/about/agreement" ubt-click="1436">服务条款和协议</a>
+				<a href="http://jobs.ele.me" ubt-click="1437">加入我们</a>
+				<a href="http:///fengniao.ele.me/">蜂鸟配送</a>
+			 </p>
+			 <div class="footer">
+			    互联网药品信息服务资格证书:
+			    <a href="http://www.shfda.gov.cn/gb/node2/yjj/index.html" target="_blank">
+			      (沪)-经营性-2016-0011
+			    </a> 
+			    | 增值电信业务许可证 : 
+			    <a href="http://www.shca.gov.cn/" target="_blank">沪B2-20150033</a> 
+			     | 
+			    <a href="http://www.miibeian.gov.cn/" target="_blank">沪ICP备 09007032</a> 
+			     |
+			    <a href="http://www.sgs.gov.cn/lz/licenseLink.do?method=licenceView&amp;entyId=20120305173227823" target="_blank">上海工商行政管理</a> 
+			    Copyright ©2008-2017 上海拉扎斯信息科技有限公司, All Rights Reserved.
+			</div>
+			<div class="footend">
+				<a href="http://www.zx110.org/picp/?sn=310100103568" rel="nofollow" target="_blank">
+				  <img alt=" " src="images/foot.png" height="30">
+				</a>
+			</div>
+		</div>
+ 
+	</div>
+
+</body>
+</html>
